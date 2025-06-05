@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riot Truck Job</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="truck-job-container">
+        <div class="background-animation">
+            <div class="particles" id="particles"></div>
+        </div>
+
+        <!-- Main Menu -->
+        <div id="main-menu" class="menu-container hardware-accelerated">
+            <div class="menu-header">
+                <div class="header-icon glow-effect"><i class="fas fa-truck-moving"></i></div>
+                <h1>Công Việc Tài Xế Xe Tải</h1>
+                <i class="fas fa-times close-btn" id="close-main"></i>
+            </div>
+            <div class="menu-content">
+                <div class="job-type-container">
+                    <div class="job-type hardware-accelerated" id="truck-job">
+                        <div class="job-icon-wrap">
+                            <i class="fas fa-truck-container"></i>
+                        </div>
+                        <h3>Lái Xe Thuê</h3>
+                        <p><i class="fas fa-info-circle"></i> Vận chuyển hàng hóa bằng xe tải của công ty</p>
+                        <span class="job-badge">Dễ</span>
+                    </div>
+                    <div class="job-type hardware-accelerated" id="container-job">
+                        <div class="job-icon-wrap">
+                            <i class="fas fa-trailer"></i>
+                        </div>
+                        <h3>Lái Xe Container</h3>
+                        <p><i class="fas fa-info-circle"></i> Vận chuyển container bằng xe đầu kéo cá nhân</p>
+                        <span class="job-badge">Khó</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-footer">
+                <p><i class="fas fa-hand-point-up"></i> Chọn loại công việc bạn muốn làm</p>
+            </div>
+        </div>
+
+        <!-- Truck Selection Menu -->
+        <div id="truck-selection" class="menu-container hardware-accelerated">
+            <div class="menu-header">
+                <div class="header-icon glow-effect"><i class="fas fa-truck"></i></div>
+                <h1>Chọn Loại Xe Tải</h1>
+                <i class="fas fa-arrow-left back-btn" id="back-to-main-from-truck"></i>
+                <i class="fas fa-times close-btn" id="close-truck"></i>
+            </div>
+            <div class="menu-content">
+                <div class="vehicle-container" id="truck-list">
+                </div>
+            </div>
+            <div class="menu-footer">
+                <p><i class="fas fa-hand-point-up"></i> Chọn loại xe tải bạn muốn lái</p>
+            </div>
+        </div>
+
+        <!-- Container Selection Menu -->
+        <div id="container-selection" class="menu-container hardware-accelerated">
+            <div class="menu-header">
+                <div class="header-icon glow-effect"><i class="fas fa-container-storage"></i></div>
+                <h1>Chọn Loại Container</h1>
+                <i class="fas fa-arrow-left back-btn" id="back-to-main-from-container"></i>
+                <i class="fas fa-times close-btn" id="close-container"></i>
+            </div>
+            <div class="menu-content">
+                <div class="vehicle-container" id="trailer-list">
+                </div>
+            </div>
+            <div class="menu-footer">
+                <p><i class="fas fa-hand-point-up"></i> Chọn loại container bạn muốn vận chuyển</p>
+            </div>
+        </div>
+
+        <!-- Return Menu -->
+        <div id="return-menu" class="menu-container hardware-accelerated">
+            <div class="menu-header">
+                <div class="header-icon glow-effect"><i class="fas fa-clipboard-check"></i></div>
+                <h1>Hoàn Thành Công Việc</h1>
+                <i class="fas fa-times close-btn" id="close-return"></i>
+            </div>
+            <div class="menu-content">
+                <div class="return-options">
+                    <div class="return-option hardware-accelerated" id="complete-job">
+                        <div class="return-icon-wrap success-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Hoàn Thành Công Việc</h3>
+                        <p><i class="fas fa-money-bill-wave"></i> Nhận tiền công và kết thúc công việc</p>
+                    </div>
+                    <div class="return-option hardware-accelerated" id="cancel-job">
+                        <div class="return-icon-wrap danger-icon">
+                            <i class="fas fa-ban"></i>
+                        </div>
+                        <h3>Hủy Công Việc</h3>
+                        <p><i class="fas fa-exclamation-triangle"></i> Hủy công việc hiện tại và không nhận tiền</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-footer">
+                <p><i class="fas fa-hand-point-up"></i> Chọn hành động bạn muốn thực hiện</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
